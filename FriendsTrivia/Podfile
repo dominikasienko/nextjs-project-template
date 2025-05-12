@@ -1,0 +1,54 @@
+platform :ios, '15.0'
+use_frameworks!
+
+target 'FriendsTrivia' do
+  # Firebase
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Crashlytics'
+  pod 'Firebase/Performance'
+  
+  # UI/UX
+  pod 'Lottie'  # For animations
+  pod 'SnapKit'  # For programmatic constraints
+  pod 'SDWebImage'  # For image loading and caching
+  
+  # Game Center
+  pod 'GameKit'
+  
+  # Testing
+  target 'FriendsTriviaTests' do
+    inherit! :search_paths
+    pod 'Quick'
+    pod 'Nimble'
+  end
+  
+  # UI Testing
+  target 'FriendsTriviaUITests' do
+    inherit! :search_paths
+  end
+  
+  post_install do |installer|
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
+        
+        # Enable ARM64 architecture for iOS Simulator
+        config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = ''
+        
+        # Add privacy descriptions required by iOS
+        config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= ['$(inherited)']
+        
+        # Enable bitcode
+        config.build_settings['ENABLE_BITCODE'] = 'NO'
+        
+        # Enable Swift strict concurrency checking
+        config.build_settings['SWIFT_STRICT_CONCURRENCY'] = 'complete'
+      end
+    end
+  end
+end
