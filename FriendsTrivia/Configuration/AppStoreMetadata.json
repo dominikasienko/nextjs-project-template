@@ -1,0 +1,94 @@
+{
+  "appStoreInfo": {
+    "name": "Friends Trivia",
+    "subtitle": "The Ultimate Friends TV Show Quiz Game",
+    "category": "Games",
+    "secondaryCategory": "Entertainment",
+    "price": 0.00,
+    "availability": {
+      "availableInAllTerritories": true,
+      "preOrder": false,
+      "automaticRelease": true
+    }
+  },
+  "versionInfo": {
+    "version": "1.0.0",
+    "copyright": "© 2024 Friends Trivia. All rights reserved.",
+    "supportUrl": "https://friendstrivia.app/support",
+    "marketingUrl": "https://friendstrivia.app",
+    "privacyPolicyUrl": "https://friendstrivia.app/privacy"
+  },
+  "description": {
+    "mainDescription": "Test your knowledge of the iconic TV show Friends with this ultimate trivia game! Challenge yourself or play with friends in this beautifully designed quiz game featuring questions from all ten seasons.\n\nFEATURES:\n• Hundreds of carefully curated questions about Friends\n• Beautiful card-based design inspired by Friends: A to Z Guide\n• Play solo or challenge friends in multiplayer mode\n• Unlock additional question packs from different seasons\n• Compete globally on leaderboards\n• Earn achievements and track your progress\n• Regular updates with new questions and features",
+    "keywords": "friends,trivia,quiz,tv show,multiplayer,game,entertainment,television,sitcom,90s",
+    "promotionalText": "Challenge your Friends knowledge with our latest question pack from Season 1!"
+  },
+  "screenshots": {
+    "iPhone65": [
+      "Main Menu.jpg",
+      "Game Play.jpg",
+      "Multiplayer.jpg",
+      "Leaderboard.jpg",
+      "Achievements.jpg"
+    ],
+    "iPhone55": [
+      "Main Menu 5.5.jpg",
+      "Game Play 5.5.jpg",
+      "Multiplayer 5.5.jpg",
+      "Leaderboard 5.5.jpg",
+      "Achievements 5.5.jpg"
+    ],
+    "iPad129": [
+      "Main Menu iPad.jpg",
+      "Game Play iPad.jpg",
+      "Multiplayer iPad.jpg",
+      "Leaderboard iPad.jpg",
+      "Achievements iPad.jpg"
+    ]
+  },
+  "inAppPurchases": [
+    {
+      "productId": "com.friendstrivia.seasonone",
+      "type": "non-consumable",
+      "displayName": "Season 1 Questions",
+      "description": "Unlock additional questions from Season 1 of Friends",
+      "price": 0.99
+    },
+    {
+      "productId": "com.friendstrivia.seasontwo",
+      "type": "non-consumable",
+      "displayName": "Season 2 Questions",
+      "description": "Unlock additional questions from Season 2 of Friends",
+      "price": 0.99
+    },
+    {
+      "productId": "com.friendstrivia.seasonthree",
+      "type": "non-consumable",
+      "displayName": "Season 3 Questions",
+      "description": "Unlock additional questions from Season 3 of Friends",
+      "price": 0.99
+    },
+    {
+      "productId": "com.friendstrivia.allseasons",
+      "type": "non-consumable",
+      "displayName": "All Seasons Bundle",
+      "description": "Unlock questions from all seasons of Friends at a discounted price",
+      "price": 2.99
+    }
+  ],
+  "ageRating": {
+    "rating": "4+",
+    "contentDescriptors": [],
+    "unrestricted": true
+  },
+  "buildInfo": {
+    "appIconSet": true,
+    "launchScreenSet": true,
+    "deviceFamilies": ["iphone", "ipad"],
+    "orientations": {
+      "iphone": ["portrait"],
+      "ipad": ["portrait", "landscape"]
+    }
+  },
+  "reviewNotes": "A test account has been provided in the review notes section. The app includes multiplayer functionality using Game Center and Firebase for real-time updates. In-app purchases are implemented for additional question packs."
+}
